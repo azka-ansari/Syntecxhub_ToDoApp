@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Idiqlat:wght@200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    min-height: 100vh;
+}
+
+.containe {
+    width: 100%;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 35px 20px;
+    margin-bottom: 30px;
+    background: #f5e6d3;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #ddd;
+}
+
+header h1 {
+    font-family: "Idiqlat", serif;
+    color: #6f4e37;
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+header p {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #3d2b1f;
+    line-height: 1.7;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 25px 40px;
+}
+
+.total {
+    background: linear-gradient(135deg, #916241, #6f4e37);
+    width: 100%;
+    min-height: 145px;
+    padding: 25px 30px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(111, 78, 55, 0.2);
+    margin-bottom: 25px;
+    border: 1px solid #a77b59;
+}
+
+.total h3 {
+    font-family: "Roboto", sans-serif;
+    color: #f5e6d3;
+    font-size: 19px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.total p {
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.input {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.input input {
+    flex: 1;
+    min-width: 0;
+    padding: 15px 18px;
+    border: 2px solid #c9a889;
+    background: #fff;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.input input:focus {
+    border-color: #6f4e37;
+    box-shadow: 0 0 0 3px rgba(145, 98, 65, 0.12);
+}
+
+.input button {
+    padding: 15px 28px;
+    background: #6f4e37;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.input button:hover {
+    background: #4f3424;
+    transform: translateY(-2px);
+}
+
+.error {
+    color: #b3261e;
+    font-size: 13px;
+    width: 100%;
+    min-height: 20px;
+    margin-bottom: 12px;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #f5e6d3;
+    padding: 18px;
+    border-radius: 12px;
+    border-left: 5px solid #916241;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.list h3 {
+    font-family: "Oswald", sans-serif;
+    color: #20170d;
+    font-size: 20px;
+    overflow-wrap: anywhere;
+}
+
+.delete {
+    background: #916241;
+    color: white;
+    border: none;
+    padding: 9px 16px;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 100px;
+    align-self: flex-end;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.delete:hover {
+    background: #6f4e37;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 25px 15px;
+        margin-bottom: 25px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    .box {
+        padding: 0 15px 30px;
+    }
+
+    .total {
+        min-height: 125px;
+        padding: 20px;
+    }
+
+    .total h3 {
+        font-size: 17px;
+    }
+
+    .total p {
+        font-size: 32px;
+    }
+
+    .input {
+        gap: 8px;
+    }
+
+    .input input {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .input button {
+        padding: 12px 16px;
+        font-size: 13px;
+    }
+
+    .list {
+        padding: 14px;
+    }
+
+    .list h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 350px) {
+    .input {
+        flex-direction: column;
+    }
+
+    .input input,
+    .input button {
+        width: 100%;
+    }
+}
